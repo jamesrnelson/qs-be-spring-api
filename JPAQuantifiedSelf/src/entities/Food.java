@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
-@Table(name = "food")
+@Table(name="foods")
 public class Food {
 
       //fields
@@ -27,7 +27,7 @@ public class Food {
 
       //mappings
 
-      @OneToMany(mappedBy="mealFoods")
+      @OneToMany(mappedBy="foods")
 
       //sets and gets
       public String getName() {
